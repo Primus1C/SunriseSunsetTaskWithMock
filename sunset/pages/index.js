@@ -1,13 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Sunset from "../components/Sunset";
 
 export default function Home() {
   return (
-
-    // ! тут вызов компонента
-    <Sunset/>
-
-
+    <Sunset />
   )
 }
