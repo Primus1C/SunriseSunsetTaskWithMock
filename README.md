@@ -12,7 +12,6 @@ Make json file from copied text, and put here: //pulic/data.json
 
 4. Create and edit component "Sunset" //components/Sunset/index.js 
 
-5. Edit main page: //pages/index.js: function Home will return <что?> 
-это главная страница. Сюда можно докинуть тайтлов и всяких элементов оформления
+5. Edit main page: //pages/index.js
 
 6. Define styles: //components/Sunset/styles.module.css
