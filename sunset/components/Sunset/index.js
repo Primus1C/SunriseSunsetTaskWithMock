@@ -54,6 +54,7 @@ function Sunset() {
 
     return <div className={styles.container}>
 
+        <div className={styles.row}>
             <DatePicker selected={date} onChange={(date) => { setDate(date); setResult([]); }} />
 
             <select value={countryCode} onChange={(e) => { setCountryCode(e.target.value); setResult([]); }}>
@@ -63,13 +64,22 @@ function Sunset() {
                     countries.map((country) => <option key={country.code} value={country.code}>{country.name}</option>)
                 }
             </select>
+        </div>
 
-            <button onClick={getSunriseSunset}>Show</button>
+            <div>
+                <button onClick={getSunriseSunset}>Show</button>
+            </div>
+
+
 
             {result.sunrise && result.sunset &&
-                <div>
-                    <div>Sunrise is at {Moment(result.sunrise, "HH:mm:ss A").format("HH:mm")}</div>
-                    <div>Sunset is at {Moment(result.sunset, "HH:mm:ss A").format("HH:mm")}</div>
+                <div> 
+                   <div><img src='/images/rise.png' alt='Sunrise' width='50' height='50'/>
+                        Sunrise is at {Moment(result.sunrise, "HH:mm:ss A").format("HH:mm")}
+                    </div>
+                    <div><img src='/images/set.png' alt='Sunset' width='50' height='50'/>
+                        Sunset is at {Moment(result.sunset, "HH:mm:ss A").format("HH:mm")}
+                    </div>
                 </div>
             }
 

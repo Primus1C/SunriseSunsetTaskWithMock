@@ -1,0 +1,11 @@
+@media screen and (min-width: 600px) {
+    
+}
+
+.container{
+    font-size: larger;
+    text-align: center;
+    border: 5px;
+    padding: 10px;
+
+}
